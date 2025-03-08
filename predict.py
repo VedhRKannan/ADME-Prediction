@@ -33,4 +33,6 @@ smiles = [mol_to_fp(smiles)]
 # Make predictions with all models
 for name, model in loaded_models.items():
     preds = model.predict(smiles)
-    print(f"Predictions from {name}: {preds[:5]}")  # Print first 5 predictions
+    print(f"Predictions from {name}: {preds[:5]}")
+
+
